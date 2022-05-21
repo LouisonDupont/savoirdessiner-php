@@ -1,0 +1,390 @@
+.hero {
+    background-color: $jaune;
+
+    .container {
+        display: flex;
+        align-items: center;
+        min-height: 75vh;
+
+        .hero_left_content {
+            width: 50%;
+            background-image: url("../img/brush_blanc.svg");
+            background-repeat: no-repeat;
+            background-position-x: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 2rem;
+            }
+
+            h1 {
+                font-weight: bold;
+                letter-spacing: 0.28rem;
+                margin-bottom: 5rem;
+            }
+
+            .hero_btn_container {
+                a {
+                    padding: 1rem 2rem;
+                    background-color: $noir;
+                    color: $blanc;
+                    text-transform: uppercase;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    text-decoration: none;
+                    line-height: 2.4rem;
+                    border-radius: .5rem;
+                }
+
+                a:hover {
+                    background-color: $blanc;
+                    color: $noir;
+                    border: .2rem solid $noir
+                }
+            }
+        }
+
+        .hero_right_content {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                max-width: 70rem;
+                min-width: 30rem;
+                object-fit: cover;
+                border-radius: 1rem;
+            }
+        }
+    }
+}
+
+.school {
+    background-color: $gris-clair-2;
+
+    .container {
+        padding: 8.5rem 0;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .school_card_container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+
+            article {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    margin-bottom: 1.5rem;
+                }
+
+                h3 {
+                    font-weight: 600;
+                    font-size: 2.5rem;
+                    line-height: 2.8rem;
+                    margin-bottom: .5rem;
+                }
+
+                .article_desc {
+                    text-align: center;
+                    max-width: 42rem;
+                    padding: 0 .5rem;
+                    min-height: 5rem;
+                    font-size: 1.6rem;
+                }
+            }
+
+        }
+    }
+}
+
+.class {
+    .container {
+        .class_intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 7rem;
+
+            h2 {
+                font-weight: 900;
+                line-height: 6rem;
+                font-size: 5rem;
+                color: $noir;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            .class_desc {
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 2.4rem;
+                color: $gris-fonce-1;
+                text-align: center;
+            }
+        }
+
+        .class_cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+
+            .card {
+                position: relative;
+                background-color: $gris-clair-1;
+                border: .1rem solid $gris-clair-4;
+                border-radius: .5rem;
+                padding: 2rem 2rem 15rem 2rem;
+                max-width: 53.6rem;
+                margin: 0 2rem 2rem 2rem;
+
+                img {
+                    border-radius: .5rem;
+                    height: 20rem;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: all ease-in-out .4s;
+                }
+
+
+                .card_info {
+                    display: flex;
+                    margin-top: 2rem;
+
+                    .level {
+                        color: $vert;
+                        margin-right: 2rem;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        line-height: 2.4rem;
+                    }
+
+                    .level:before {
+                        content: url('../img/icon_feather-calendar.svg');
+                        margin-right: .5rem;
+                        width: 1.8rem;
+                        height: 1.2rem;
+                    }
+
+                    .time {
+                        color: #555555;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        line-height: 2.4rem;
+                        margin-right: 2rem;
+                    }
+
+                    .time:before {
+                        content: url(../img/icon_feather-clock.svg);
+                        margin-right: .5rem;
+                        top: 50%;
+                    }
+
+                    .number_class {
+                        color: #555555;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        line-height: 2.4rem;
+                        margin-right: 2rem;
+                    }
+                }
+
+                .title_class {
+                    margin-top: 1.5rem;
+                    font-size: 2.4rem;
+                    font-weight: bold;
+                    line-height: 3.4rem;
+                }
+
+                .class_excerpt {
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    color: $gris-fonce-1;
+                    margin-top: 1rem;
+                }
+
+                .btn_class {
+                    position: absolute;
+                    right: 0;
+                    margin-right: 2rem;
+                    margin-bottom: 2rem;
+                    bottom: 0;
+                    background-color: $jaune;
+                    text-decoration: none;
+                    color: $noir;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                    padding: 1.9rem 2.6rem;
+                    border-radius: 1rem;
+                }
+
+                .btn_class:hover {
+                    background-color: $rouge;
+                }
+
+
+            }
+
+            .card:hover {
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                transition: .2s;
+            }
+        }
+
+        .class_btn_container {
+            display: flex;
+            justify-content: center;
+            padding: 5rem 0;
+
+            .all_class {
+                display: inline;
+                background-color: $gris-clair-3;
+                padding: 1.7rem 1.9rem;
+                border-radius: .5rem;
+                color: $noir;
+                font-size: 500;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                text-decoration: none;
+            }
+
+            .all_class:hover {
+                background-color: $jaune;
+            }
+        }
+    }
+}
+
+.separateur_image {
+    display: inline;
+    height: 1rem;
+    width: 6.5rem;
+    background-image: url(../img/ligne_sous_texte.svg);
+    background-repeat: no-repeat;
+    border: none;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.sens {
+    .container {
+        display: flex;
+        padding: 5rem 2rem;
+
+        .sens_left_content {
+            img {
+                width: 100%;
+                max-height: 56rem;
+            }
+        }
+
+        .sens_right_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2 {
+                font-weight: bold;
+                font-size: 4rem;
+                line-height: 5rem;
+                margin-bottom: 1rem;
+            }
+
+            .sens_desc {
+                font-weight: 400;
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+                color: $gris-fonce-1;
+                margin-bottom: 3rem;
+                max-width: 55rem;
+            }
+
+            .sens_btn {
+                max-width: 26.2rem;
+                display: inline-block;
+                padding: 1.8rem;
+                color: $noir;
+                background-color: $blanc;
+                border: .1rem solid $noir;
+                border-radius: .5rem;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                font-weight: 600;
+                line-height: 2rem;
+                text-decoration: none;
+            }
+
+            .sens_btn:hover {
+                background-color: $noir;
+                color: $blanc;
+            }
+        }
+    }
+}
+
+.techniques {
+    .container {
+        display: flex;
+        padding: 5rem 2rem;
+
+        .techniques_left_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h2 {
+                font-weight: bold;
+                font-size: 4rem;
+                line-height: 5rem;
+                margin-bottom: 1rem;
+            }
+
+            .techniques_desc {
+                font-weight: 400;
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+                color: $gris-fonce-1;
+                margin-bottom: 5rem;
+                max-width: 55rem;
+            }
+
+            .techniques_btn {
+                padding: 1.9rem 3.2rem;
+                color: $noir;
+                background-color: $blanc;
+                border: .1rem solid $noir;
+                border-radius: .5rem;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                font-weight: 600;
+                line-height: 2rem;
+                text-decoration: none;
+            }
+
+            .techniques_btn:hover {
+                background-color: $noir;
+                color: $blanc;
+            }
+        }
+
+        .techniques_right_content {
+
+            img {
+                width: 100%;
+                max-height: 56rem;
+            }
+
+        }
+    }
+}

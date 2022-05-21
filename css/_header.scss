@@ -1,0 +1,194 @@
+header {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 4rem 2rem;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .header_left_content {
+            display: flex;
+
+            img {
+                width: 12.1rem;
+                height: 4rem;
+            }
+
+            .main_menu {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                ul {
+                    margin: 0;
+
+                    li {
+                        a {
+                            font-size: 1.6rem;
+                            color: $noir;
+                            font-weight: 500;
+                        }
+
+                        a[href$='#atelier']:hover,
+                        a[href$='#rdv']:hover,
+                        a[href$='#box']:hover {
+                            border-bottom: .5rem solid black;
+                            padding: 4.5rem 0;
+                        }
+                    }
+
+                    li:not(:last-child) {
+                        margin-right: 2rem;
+                    }
+
+                    .main_subitem a {}
+
+                    .a_propos::after {
+                        border-style: solid;
+                        border-width: 0.1em 0.1em 0 0;
+                        content: '';
+                        display: inline-block;
+                        height: 0.45em;
+                        position: relative;
+                        top: .6rem;
+                        vertical-align: top;
+                        width: 0.45em;
+                        left: .5rem;
+                        transform: rotate(135deg);
+                    }
+
+                    .a_propos:hover::after {
+                        display: none;
+                    }
+
+                    .a_propos ul {
+                        display: none;
+                    }
+
+                    .a_propos:hover ul {
+                        z-index: 2;
+                        background-color: $blanc;
+                        position: absolute;
+                        display: block;
+                        padding: 1rem;
+                        list-style-type: none;
+                    }
+
+                    .a_propos ul li:nth-child(1):hover a {
+                        color: $vert;
+                    }
+
+                    .a_propos ul li:nth-child(2):hover a {
+                        color: $rouge;
+                    }
+
+                    .a_propos ul li:nth-child(3):hover a {
+                        color: $jaune;
+                    }
+                }
+            }
+        }
+
+        .header_right_content {
+            display: flex;
+            align-items: center;
+
+            ul {
+                margin: 0;
+                display: flex;
+                align-items: center;
+
+                a {
+                    margin-right: 2rem;
+                }
+
+                .shop_item a {
+                    color: #717171;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+
+                }
+
+                .shop_item a:hover {
+                    color: $gris-fonce-3;
+                }
+
+                .panier_item {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+                .panier_item a {
+                    color: $noir;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    // position: relative;
+                }
+
+                .panier_item a:before {
+                    content: '';
+                    display: inline-block;
+                    background-image: url(/img/picto_panier.svg);
+                    background-size: 1.5rem 1.5rem;
+                    margin-right: 1rem;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    background-repeat: no-repeat;
+                }
+
+                .panier_item a:hover {
+                    color: $gris-fonce-3;
+                }
+
+                .connexion_item a {
+                    font-size: 1.6rem;
+                    color: $noir;
+                    font-weight: 500;
+                }
+
+                .connexion_item a:hover {
+                    color: $gris-fonce-3;
+                }
+
+                .connexion_item a::after {
+                    border-style: solid;
+                    border-width: 0.1em 0.1em 0 0;
+                    content: '';
+                    margin-left: .5rem;
+                    display: inline-block;
+                    height: 0.45em;
+                    position: relative;
+                    top: .8rem;
+                    vertical-align: top;
+                    width: 0.45em;
+                    left: 0;
+                    transform: rotate(45deg);
+                }
+
+                .btn_commencer {
+                    background-color: $jaune;
+                    border: none;
+                    border-radius: .5rem;
+                    padding: 1rem 2rem;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: $noir;
+                }
+
+                .btn_commencer:hover {
+                    background-color: $rouge;
+                }
+            }
+        }
+    }
+
+}

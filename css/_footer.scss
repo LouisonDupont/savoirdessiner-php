@@ -1,0 +1,118 @@
+footer {
+    margin-top: 5rem;
+    background-color: $noir;
+
+    .container {
+        display: flex;
+
+        .footer_left_content {
+            max-width: 23rem;
+            display: flex;
+            flex-direction: column;
+
+            .footer_logo {
+                margin-bottom: 2rem;
+            }
+
+            a {
+                color: $blanc;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            a:hover {
+                color: $jaune;
+            }
+
+            .footer_social_container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        .footer_adress_container {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-left: 3rem;
+
+
+            .footer_adress_text {
+                margin-top: .5rem;
+                padding-left: 2.1rem;
+                font-size: 1.8rem;
+            }
+
+            .footer_adress_phone {
+                margin-top: .5rem;
+                padding-left: 2.1rem;
+                font-size: 1.8rem;
+            }
+
+            .commerce {
+                color: $blanc;
+
+                .commerce_title {
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                }
+
+                .commerce_title::before {
+                    content: '';
+                    background-image: url(../img/brush_bleu.svg);
+                    width: 1.6rem;
+                    height: 2.3rem;
+                    background-size: 1.6rem 2.3rem;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    margin-bottom: -0.4rem;
+                    margin-right: .5rem;
+                }
+            }
+
+            .vaugirard {
+                color: $blanc;
+
+                .vaugirard_title {
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                }
+
+                .vaugirard_title::before {
+                    content: '';
+                    background-image: url(../img/brush_rouge.svg);
+                    width: 1.6rem;
+                    height: 2.3rem;
+                    background-size: 1.6rem 2.3rem;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    margin-bottom: -0.4rem;
+                    margin-right: .5rem;
+                }
+            }
+
+            .saint_ambroise {
+                color: $blanc;
+
+                .saint_ambroise_title {
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                }
+
+                .saint_ambroise_title::before {
+                    content: '';
+                    background-image: url(../img/brush_vert.svg);
+                    width: 1.6rem;
+                    height: 2.3rem;
+                    background-size: 1.6rem 2.3rem;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    margin-bottom: -0.4rem;
+                    margin-right: .5rem;
+                }
+            }
+        }
+    }
+}
